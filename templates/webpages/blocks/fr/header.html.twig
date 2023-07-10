@@ -1,10 +1,18 @@
 <header id="header">
-<h1>En-tête du site</h1>
+  <h1>En-tête du site</h1>
 </header>
 
 <nav>
-<ul id="nav">
-	<li><a href="/fr">Accueil</a></li>
-	<li>{% if page_slug is defined %} <a data-no-swup="" href="/en/{{ page_slug }}">EN</a> {% elseif post_slug is defined %} <a data-no-swup="" href="/en/blog/{{ post_slug }}">EN</a> {% endif %}</li>
-</ul>
+  <ul id="nav">
+    <li><a href="/fr">Accueil</a></li>
+    <li><a href="/fr">Développer son identité visuelle</a></li>
+    <li><a href="/fr">Communiquer en ligne</a></li>
+    <li><a href="/fr">Vendre avec le E-Commerce</a></li>
+    <li><a href="/fr">Se former au marketing digital</a></li>
+    <li><a href="/fr">Voir nos actualités</a></li>
+    <li><a href="/fr">Demander un devis en ligne</a></li>
+    <!--
+    <li>{% if page_slug is defined %} <a data-no-swup="" href="/en/{{ page_slug }}">EN</a> {% elseif post_slug is defined %} <a data-no-swup="" href="/en/blog/{{ post_slug }}">EN</a> {% endif %}</li>
+    -->
+  </ul>
 </nav>
