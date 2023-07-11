@@ -20,7 +20,7 @@ Encore
      * Each entry will result in one JavaScript file (e.g. app.js)
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
-    .addEntry('app', './assets/app.js')
+    .addEntry('app', ['./assets/app.js', './assets/react.js'])
     .addEntry('app-admin', './assets/app-admin.js')
     .addEntry('modernizr', './assets/modernizr.js')
 
@@ -58,18 +58,18 @@ Encore
     })
 
     // uncomment if you use VueJS
-    .enableVueLoader(() => {}, {
-        useJsx: true
-    })
+    // .enableVueLoader(() => {}, {
+    //     useJsx: true
+    // })
 
     // enables Sass/SCSS support
     .enableSassLoader()
 
     // uncomment if you use TypeScript
     .enableTypeScriptLoader()
-
+    
     // uncomment if you use React
-    //.enableReactPreset()
+    .enableReactPreset()
 
     // uncomment to get integrity="..." attributes on your script & link tags
     // requires WebpackEncoreBundle 1.4 or higher

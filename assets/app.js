@@ -13,8 +13,8 @@ import './bootstrap';
 
 import { ScrollWeb } from './smoothScroll';
 import { Parallax } from './parallax';
-import { createApp } from 'vue';
 import AOS from 'aos';
+
 
 // Variables
 // -----------------------------------------------
@@ -24,16 +24,15 @@ const values = {
     scrollImgSpeed: pageDatas.dataset.scrollimg
 };
 
+
 // Instantieur
 // -----------------------------------------------
 document.addEventListener('DOMContentLoaded', function(){
-    createApp({
-    //     Configuration de votre application Vue.js
-    }).mount('#website');
     AOS.init();
     scrollWeb();
     parallax();
 });
+
 
 // Smooth Scrollbar
 // -----------------------------------------------
@@ -43,6 +42,7 @@ function scrollWeb() {
     return scrollWeb;
 }
 
+
 // Parallax
 // -----------------------------------------------
 function parallax() {
@@ -50,3 +50,7 @@ function parallax() {
     parallax.initParallax();
     return parallax;
 }
+
+
+// React
+// -----------------------------------------------

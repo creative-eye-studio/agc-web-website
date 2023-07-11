@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f2cdeae8a4222c42cc50de96e5b85d9e",
+    "content-hash": "6d53b7f5ea9f24e88e16aebe0f5f7291",
     "packages": [
         {
             "name": "amphp/amp",
@@ -8767,16 +8767,16 @@
         },
         {
             "name": "symfony/ux-vue",
-            "version": "v2.9.1",
+            "version": "v2.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/ux-vue.git",
-                "reference": "a315e5b62aa1caf1a4df25f594546bac8b2fb39e"
+                "reference": "371b35e80d5b45ea4d93e399d040bb5d7e8af089"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/ux-vue/zipball/a315e5b62aa1caf1a4df25f594546bac8b2fb39e",
-                "reference": "a315e5b62aa1caf1a4df25f594546bac8b2fb39e",
+                "url": "https://api.github.com/repos/symfony/ux-vue/zipball/371b35e80d5b45ea4d93e399d040bb5d7e8af089",
+                "reference": "371b35e80d5b45ea4d93e399d040bb5d7e8af089",
                 "shasum": ""
             },
             "require": {
@@ -8827,7 +8827,7 @@
                 "symfony-ux"
             ],
             "support": {
-                "source": "https://github.com/symfony/ux-vue/tree/v2.9.1"
+                "source": "https://github.com/symfony/ux-vue/tree/v2.10.0"
             },
             "funding": [
                 {
@@ -8843,7 +8843,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-05-30T14:40:50+00:00"
+            "time": "2023-06-28T20:17:17+00:00"
         },
         {
             "name": "symfony/validator",
