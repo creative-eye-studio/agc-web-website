@@ -14,6 +14,7 @@ import './bootstrap';
 import { ScrollWeb } from './smoothScroll';
 import { Parallax } from './parallax';
 import AOS from 'aos';
+import LastPosts from './vue/controllers/LastPosts';
 
 
 // Variables
@@ -31,6 +32,9 @@ document.addEventListener('DOMContentLoaded', function(){
     AOS.init();
     scrollWeb();
     parallax();
+    createApp({
+        components: { LastPosts }
+    }).mount('#website');
 });
 
 
@@ -51,6 +55,6 @@ function parallax() {
     return parallax;
 }
 
-
-// React
+// Navigation
 // -----------------------------------------------
+

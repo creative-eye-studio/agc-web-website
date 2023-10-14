@@ -1,20 +1,24 @@
 {% extends 'base.html.twig' %}
 
+{# Langue #}
+{% block lang %}{{ lang_page }}{% endblock %}
 {# Metas #}
-{% block lang %}{{ page_lang }}{% endblock %}
 {% block title %}{{ meta_title }}{% endblock %}
 {% block desc %}{{ meta_desc }}{% endblock %}
+{# Settings #}
 {% block damping %}{{ settings.damping }}{% endblock %}
 {% block scrollimg %}{{ settings.scrollimg }}{% endblock %}
 
 {% block body %}
-    <div id="content">
-        <div id="website">
-            {% include "webpages/blocks/#{page_lang}/header.html.twig" %}
-            <main id="main">
-                {% include "webpages/pages/#{page_lang}/#{page_id}.html.twig" %}
-            </main>
-            {% include "webpages/blocks/#{page_lang}/footer.html.twig" %}
-        </div>
-    </div>
+    {{ page_content | raw }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript">
+        window.appData = {
+            lastPosts: {{ last_posts | json_encode | raw }}
+        };
+        console.log(window.appData.lastPosts);
+    </script>
 {% endblock %}

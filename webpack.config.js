@@ -20,9 +20,11 @@ Encore
      * Each entry will result in one JavaScript file (e.g. app.js)
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
-    .addEntry('app', ['./assets/app.js', './assets/react.js'])
-    .addEntry('app-admin', './assets/app-admin.js')
+    .addEntry('app', './assets/app.js')
+    .addEntry('tarteaucitronjs', './assets/tarteaucitronjs.js')
     .addEntry('modernizr', './assets/modernizr.js')
+    .addEntry('app-admin', './assets/app-admin.js')
+    .addEntry('grapesjs', './node_modules/grapesjs/dist/grapes.min.js')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
@@ -58,9 +60,7 @@ Encore
     })
 
     // uncomment if you use VueJS
-    // .enableVueLoader(() => {}, {
-    //     useJsx: true
-    // })
+    .enableVueLoader(() => {}, { runtimeCompilerBuild: false })
 
     // enables Sass/SCSS support
     .enableSassLoader()
